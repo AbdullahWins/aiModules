@@ -9,6 +9,10 @@ import JobDescription from "../components/Modules/JobDescription";
 import PersonalAssistant from "../components/Modules/PersonalAssistant";
 import AiFinancial from "../components/Modules/AiFinancial";
 import Home from "../pages/Home";
+import UniqueValue from "../components/Modules/UniqueValue";
+import CareerConsultant from "../components/Modules/CareerConsultant";
+import ProblemAgitateSolution from "../components/Modules/ProblemAgitateSolution";
+import AIDA from "../components/Modules/AIDA";
 
 export const routes = createBrowserRouter([
   {
@@ -50,6 +54,22 @@ export const routes = createBrowserRouter([
       {
         path: "/financial",
         element: <AiFinancial></AiFinancial>,
+      },
+      {
+        path: "/unique",
+        element: <UniqueValue></UniqueValue>,
+      },
+      {
+        path: "/career",
+        element: <CareerConsultant></CareerConsultant>,
+      },
+      {
+        path: "/pas",
+        element: <ProblemAgitateSolution></ProblemAgitateSolution>,
+      },
+      {
+        path: "/aida",
+        element: <AIDA></AIDA>,
       },
     ],
   },
