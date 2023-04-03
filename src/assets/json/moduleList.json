@@ -1,0 +1,112 @@
+[
+  {
+    "moduleName": "Personal Assistant",
+    "moduleDescription": "Your very own personal assistant at your service.",
+    "moduleRoute": "/assistant",
+    "img": "https://i.ibb.co/ySSw9Lv/assistant.png"
+  },
+  {
+    "moduleName": "Cold Email",
+    "moduleDescription": "Generate cold email templates instantly.",
+    "moduleRoute": "/cold",
+    "img": "https://i.ibb.co/MhC5fz5/cold-Email.png"
+  },
+  {
+    "moduleName": "Ai Financial",
+    "moduleDescription": "Your very own personal assistant at your service.",
+    "moduleRoute": "/financial",
+    "img": "https://i.ibb.co/6F7Wkp7/financial.png"
+  },
+  {
+    "moduleName": "Blog Writting",
+    "moduleDescription": "Write SEO friendly blogs that people actually reads.",
+    "moduleRoute": "/blog",
+    "img": "https://i.ibb.co/BqK98bt/blog.png"
+  },
+  {
+    "moduleName": "Job Description",
+    "moduleDescription": "Generate job descriptions using AI assistant.",
+    "moduleRoute": "/job",
+    "img": "https://i.ibb.co/qpGFjQC/job-Description.png"
+  },
+  {
+    "moduleName": "Social Media Adverts",
+    "moduleDescription": "Write engaging social media adverts to boost sales.",
+    "moduleRoute": "/social",
+    "img": "https://i.ibb.co/6yN3JP1/social.png"
+  },
+  {
+    "moduleName": "UVP Framework",
+    "moduleDescription": "Know the selling points of your product/service.",
+    "moduleRoute": "/unique",
+    "img": "https://i.ibb.co/nbNwBXM/unique-Value.png"
+  },
+  {
+    "moduleName": "Headline & Description",
+    "moduleDescription": "Create engaging headline & description",
+    "moduleRoute": "/headlines",
+    "img": "https://i.ibb.co/d0FnFdw/headline.png"
+  },
+  {
+    "moduleName": "AIDA Framework",
+    "moduleDescription": "The best AI powered AIDA Framework.",
+    "moduleRoute": "/aida",
+    "img": "https://i.ibb.co/pzc6Sdm/aida.png"
+  },
+  {
+    "moduleName": "Product Description",
+    "moduleDescription": "Generate unique product descriptions.",
+    "moduleRoute": "/product",
+    "img": "https://i.ibb.co/h8tpnJ2/product-Description.png"
+  },
+  {
+    "moduleName": "IT Support",
+    "moduleDescription": "Your IT expert AI for any IT assistance.",
+    "moduleRoute": "/itsupport",
+    "img": "https://i.ibb.co/X3Bx9fq/it-Support.png"
+  },
+  {
+    "moduleName": "Ai Lawyer",
+    "moduleDescription": "Your own AI powered lawyer at your service.",
+    "moduleRoute": "/lawyer",
+    "img": "https://i.ibb.co/pbSwjsm/lawyer.png"
+  },
+  {
+    "moduleName": "Career Counselor",
+    "moduleDescription": "Your on-hand career counselor.",
+    "moduleRoute": "/career",
+    "img": "https://i.ibb.co/mh3hvzP/career.png"
+  },
+  {
+    "moduleName": "Ai Doctor",
+    "moduleDescription": "Consult medical issues with the Ai Doctor.",
+    "moduleRoute": "/doctor",
+    "img": "https://i.ibb.co/WGZWhY5/doctor.png"
+  },
+
+  {
+    "moduleName": "Problem-Agitate-Solution",
+    "moduleDescription": "Get quick but in-depth Problem-Agitate-Solutions.",
+    "moduleRoute": "/pas",
+    "img": "https://i.ibb.co/rfS73qB/pas.png"
+  },
+
+  {
+    "moduleName": "Personal Chef",
+    "moduleDescription": "Make something new with AI chef.",
+    "moduleRoute": "/chef",
+    "img": "https://i.ibb.co/MDW0zh9/chef.png"
+  },
+  {
+    "moduleName": "Dream Interpreter",
+    "moduleDescription": "Come find out what your dreams actually mean.",
+    "moduleRoute": "/dreamer",
+    "img": "https://i.ibb.co/tYztmht/dreamer.png"
+  },
+  {
+    "moduleName": "Personal Psychologist",
+    "moduleDescription": "Get some peace of mind here with the expert.",
+    "moduleRoute": "/psychologist",
+    "img": "https://i.ibb.co/X74xpnP/psychologist.png"
+  }
+]
