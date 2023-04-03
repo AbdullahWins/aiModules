@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Home/Home";
 import Main from "../layouts/Main";
 import AIDA from "../components/Modules/AIDA";
 import ITSupport from "../components/Modules/ITSupport";
@@ -19,6 +18,7 @@ import PAS from "../components/Modules/PAS";
 import Psychologist from "../components/Modules/Psychologist";
 import PersonalAssistant from "../components/Modules/PersonalAssistant";
 import AiFinancial from "../components/Modules/AiFinancial";
+import Home from "../pages/Home";
 
 export const routes = createBrowserRouter([
   {

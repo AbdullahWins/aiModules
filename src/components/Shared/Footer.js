@@ -1,15 +1,17 @@
 import React from "react";
-import logo from "../../assets/logo/logo.png";
+// import github from "../../assets/logo/github.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="flex flex-col items-center justify-center py-4 bg-pureBlackColor text-whiteHigh">
-      <Link to="https://artsky.io/">
-        <img className="h-6" src={logo} alt="" />
+      {/* <img className="h-12" src={github} alt="" /> */}
+      <Link to="https://github.com/AbdullahWins">
+        <p className="text-mainColor text-xl font-semibold">
+          Crafted with &#10084; by
+          <span> AbdullahWins</span>
+        </p>
       </Link>
-      <span>Copyright © 2023</span>
-      <span className="text-amber-900 font-black">ARTSKY LLC</span>
     </div>
   );
 };

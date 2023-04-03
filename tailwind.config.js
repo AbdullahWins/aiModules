@@ -22,7 +22,7 @@ module.exports = {
       infoColor: "#2D8EFF",
       alertColor: "#F4A100",
 
-      mainColor: "#be985b",
+      mainColor: "#FF6000",
     },
     extend: {},
   },
