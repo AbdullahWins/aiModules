@@ -1,23 +1,23 @@
 import React, { useContext } from "react";
 import { AiContext } from "../../contexts/AiContext";
 
-const Chef = () => {
-  const { output, processRequest, isLoading, setIsLoading } =
+const AiModule = () => {
+  const { output, selectedModule, processRequest, isLoading, setIsLoading } =
     useContext(AiContext);
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
-    const prompt = "I require someone who can suggest delicious recipes that includes foods which are nutritionally beneficial but also easy & not time consuming enough therefore suitable for busy people like us among other factors such as cost effectiveness so overall dish ends up being healthy yet economical at same time! My first request ";
     setIsLoading(true);
-    processRequest(prompt, input);
+    processRequest(selectedModule?.prompt, input);
   };
+  console.log(selectedModule);
 
   return (
     <section className="bg-whiteMid">
       <div className="w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto my-0 bg-whiteHigh rounded-lg">
         <section className="flex flex-col">
           <h1 className="text-3xl font-bold text-blackHigh p-2">
-            Personal Chef
+            {selectedModule?.moduleName}
           </h1>
           <div className="flex flex-col gap-2 p-2">
             <textarea
@@ -77,4 +77,4 @@ const Chef = () => {
   );
 };
 
-export default Chef;
+export default AiModule;

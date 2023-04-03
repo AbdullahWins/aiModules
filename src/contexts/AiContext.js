@@ -1,21 +1,28 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
+import moduleArray from "../assets/json/moduleList.json";
 
 const { Configuration, OpenAIApi } = require("openai");
-
 const configuration = new Configuration({
   apiKey: process.env.REACT_APP_OPENAI_API_KEY,
 });
-
 const openai = new OpenAIApi(configuration);
-
 export const AiContext = createContext();
 
 const AiProvider = ({ children }) => {
   //states
   const [output, setOutput] = useState("");
+  const [moduleList, setModuleList] = useState(moduleArray);
+  const [selectedModule, setSelectedModule] = useState(() =>
+    String(window.localStorage.getItem("selectedModuleDetails") || null)
+  );
   const [isLoading, setIsLoading] = useState(false);
 
   //functions
+  useEffect(() => {
+    window.localStorage.setItem("selectedModuleDetails", selectedModule);
+  }, [selectedModule]);
+
+  //api request
   const processRequest = async (prompt, input) => {
     try {
       const response = await openai.createCompletion({
@@ -39,8 +46,8 @@ const AiProvider = ({ children }) => {
 
   //reset output
   const resetOutput = () => {
-    const output = "";
-    setOutput(output);
+    const newOutput = "";
+    setOutput(newOutput);
   };
 
   const aiInfo = {
@@ -49,6 +56,10 @@ const AiProvider = ({ children }) => {
     processRequest,
     isLoading,
     setIsLoading,
+    moduleList,
+    setModuleList,
+    selectedModule,
+    setSelectedModule,
   };
 
   return <AiContext.Provider value={aiInfo}>{children}</AiContext.Provider>;
