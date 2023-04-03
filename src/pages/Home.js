@@ -20,7 +20,7 @@ const Home = () => {
           <p className="text-4xl text-mainColor font-black">
             &#128075; Hey Tony, what are we creating today?
           </p>
-          <p className="opacity-60">
+          <p className="opacity-60 p-2">
             Get started by selecting the content type from the options below
           </p>
         </div>
