@@ -32,7 +32,7 @@ const PersonalAssistant = () => {
               // onChange={(e) => {
               //   handleChange(e);
               // }}
-              className={`p-3 w-full rounded-xl border-solid border-2 border-bgTextareaColor focus:outline-none`}
+              className={`p-3 w-full rounded-xl border-solid border-2 border-bgTextareaColor placeholder-blackLow placeholder-opacity-25 focus:outline-none`}
               placeholder="let me assist you with the help of AI"
               name="blogInput"
               id="input"
