@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { AiContext } from "../../contexts/AiContext";
 
 const PersonalAssistant = () => {
   const { output, processRequest, isLoading, setIsLoading } =
     useContext(AiContext);
-  // const [textCount, setTextCount] = useState(0);
+  const [textCount, setTextCount] = useState(0);
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
@@ -14,11 +14,11 @@ const PersonalAssistant = () => {
     processRequest(prompt, input);
   };
 
-  // const handleChange = (event) => {
-  //   event.preventDefault();
-  //   const input = document.getElementById("input")?.value;
-  //   setTextCount(input?.length);
-  // };
+  const handleChange = (event) => {
+    event.preventDefault();
+    const input = document.getElementById("input")?.value;
+    setTextCount(input?.length);
+  };
 
   return (
     <section>
@@ -29,9 +29,9 @@ const PersonalAssistant = () => {
               Personal Assistant
             </h1>
             <textarea
-              // onChange={(e) => {
-              //   handleChange(e);
-              // }}
+              onChange={(e) => {
+                handleChange(e);
+              }}
               className={`p-3 w-full rounded-xl border-solid border-2 border-bgTextareaColor placeholder-blackLow placeholder-opacity-25 focus:outline-none`}
               placeholder="let me assist you with the help of AI"
               name="blogInput"
@@ -41,7 +41,7 @@ const PersonalAssistant = () => {
             ></textarea>
             {/* <p className="text-right">{textCount}/200</p> */}
             <button
-              disabled={isLoading}
+              disabled={isLoading || textCount < 3}
               className={`btn text-whiteHigh bg-btnColor border-none btn-md w-full rounded-full normal-case my-4 ${
                 isLoading ? "bg-btnColor" : "text-whiteLow"
               }`}
