@@ -22,7 +22,10 @@ module.exports = {
       infoColor: "#2D8EFF",
       alertColor: "#F4A100",
 
-      mainColor: "#FF6000",
+      // mainColor: "#FF6000",
+      bgColor: "#D5D1D1",
+      bgTextareaColor: "#F3F9FF",
+      btnColor: "#5AB6FF",
     },
     extend: {},
   },
