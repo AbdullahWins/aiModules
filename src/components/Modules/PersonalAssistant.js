@@ -41,8 +41,8 @@ const PersonalAssistant = () => {
             ></textarea>
             {/* <p className="text-right">{textCount}/200</p> */}
             <button
-              disabled={isLoading || textCount < 3}
-              className={`btn text-whiteHigh bg-btnColor border-none btn-md w-full rounded-full normal-case my-4 ${
+              disabled={isLoading || textCount < 1}
+              className={`btn text-whiteHigh bg-btnColor disabled:text-btnDisabledTextColor disabled:bg-btnColorDisabled border-none btn-md w-full rounded-full normal-case my-4 ${
                 isLoading ? "bg-btnColor" : "text-whiteLow"
               }`}
               onClick={handleClick}
@@ -52,7 +52,9 @@ const PersonalAssistant = () => {
                   <span>
                     <i className="fa-solid fa-spinner fa-spin-pulse"></i>
                   </span>
-                  <span> Generating... </span>
+                  <span className="text-btnDisabledTextColor">
+                    Generating...
+                  </span>
                 </p>
               ) : (
                 <p>Start</p>
