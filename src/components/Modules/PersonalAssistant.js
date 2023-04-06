@@ -76,7 +76,7 @@ const PersonalAssistant = () => {
             ></textarea>
             <button
               disabled={isLoading || output?.length < 1}
-              className={`btn text-whiteHigh bg-btnColor border-transparent disabled:text-btnDisabledTextColor disabled:bg-btnColorDisabled hover:bg-btnColor border-2 focus:border-blackLow focus:bg-btnColorDisabled focus:text-blackLow btn-md w-full rounded-full normal-case my-4`}
+              className={`btn text-whiteHigh bg-btnColor border-transparent disabled:text-btnDisabledTextColor disabled:bg-btnColorDisabled hover:bg-btnColor border-2 focus:border-blackLow focus:bg-btnColorDisabled focus:text-blackLow btn-md w-full rounded-full normal-case my-3`}
               onClick={handleCopy}
             >
               <p className="flex items-center justify-center gap-1">
