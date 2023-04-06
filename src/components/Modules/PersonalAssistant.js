@@ -20,6 +20,10 @@ const PersonalAssistant = () => {
     setTextCount(input?.length);
   };
 
+  const handleCopy = () => {
+    navigator.clipboard.writeText(output);
+  };
+
   return (
     <section>
       <div className="w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto my-0">
@@ -42,7 +46,7 @@ const PersonalAssistant = () => {
             {/* <p className="text-right">{textCount}/200</p> */}
             <button
               disabled={isLoading || textCount < 1}
-              className={`btn text-whiteHigh bg-btnColor disabled:text-btnDisabledTextColor disabled:bg-btnColorDisabled border-none btn-md w-full rounded-full normal-case my-4 ${
+              className={`btn text-whiteHigh bg-btnColor disabled:text-btnDisabledTextColor disabled:bg-btnColorDisabled hover:bg-btnColor border-none btn-md w-full rounded-full normal-case my-4 ${
                 isLoading ? "bg-btnColor" : "text-whiteLow"
               }`}
               onClick={handleClick}
@@ -70,6 +74,15 @@ const PersonalAssistant = () => {
               cols="10"
               rows="10"
             ></textarea>
+            <button
+              disabled={isLoading || output?.length < 1}
+              className={`btn text-whiteHigh bg-btnColor border-transparent disabled:text-btnDisabledTextColor disabled:bg-btnColorDisabled hover:bg-btnColor border-2 focus:border-blackLow focus:bg-btnColorDisabled focus:text-blackLow btn-md w-full rounded-full normal-case my-4`}
+              onClick={handleCopy}
+            >
+              <p className="flex items-center justify-center gap-1">
+                <span class="material-symbols-outlined">copy_all</span>Copy
+              </p>
+            </button>
           </div>
         </section>
       </div>
