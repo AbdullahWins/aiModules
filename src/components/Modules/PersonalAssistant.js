@@ -27,16 +27,16 @@ const PersonalAssistant = () => {
   return (
     <section>
       <div className="w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto my-0">
-        <section className="flex flex-col gap-8">
+        <section className="flex flex-col gap-4">
           <div className="flex flex-col gap-2 p-4 bg-whiteHigh shadow-lg shadow-blackLow rounded-xl">
-            <h1 className="text-xl font-bold text-blackHigh py-2">
+            <h1 className="text-xl font-bold text-blackHigh pt-2">
               Personal Assistant
             </h1>
             <textarea
               onChange={(e) => {
                 handleChange(e);
               }}
-              className={`p-3 w-full rounded-xl border-solid border-2 border-bgTextareaColor placeholder-blackLow placeholder-opacity-25 focus:outline-none`}
+              className={`p-2 w-full rounded-xl border-solid border-2 border-bgTextareaColor placeholder-blackLow placeholder-opacity-25 focus:outline-none`}
               placeholder="let me assist you with the help of AI"
               name="blogInput"
               id="input"
@@ -46,7 +46,7 @@ const PersonalAssistant = () => {
             {/* <p className="text-right">{textCount}/200</p> */}
             <button
               disabled={isLoading || textCount < 1}
-              className={`btn text-whiteHigh bg-btnColor disabled:text-btnDisabledTextColor disabled:bg-btnColorDisabled hover:bg-btnColor border-none btn-md w-full rounded-full normal-case my-4 ${
+              className={`btn text-whiteHigh bg-btnColor disabled:text-btnDisabledTextColor disabled:bg-btnColorDisabled hover:bg-btnColor border-none btn-md w-full rounded-full normal-case my-2 ${
                 isLoading ? "bg-btnColor" : "text-whiteLow"
               }`}
               onClick={handleClick}
@@ -68,7 +68,7 @@ const PersonalAssistant = () => {
           <div className="p-4 bg-whiteHigh shadow-lg shadow-blackLow rounded-xl">
             <h1 className="text-xl font-bold text-blackHigh py-2">Result</h1>
             <textarea
-              className={`p-3 w-full rounded-xl border-none focus:outline-none bg-bgTextareaColor`}
+              className={`p-2 w-full rounded-xl border-none focus:outline-none bg-bgTextareaColor`}
               placeholder=""
               defaultValue={output}
               cols="10"
@@ -80,7 +80,7 @@ const PersonalAssistant = () => {
               onClick={handleCopy}
             >
               <p className="flex items-center justify-center gap-1">
-                <span class="material-symbols-outlined">copy_all</span>Copy
+              <i class="fa-regular fa-copy"></i>Copy
               </p>
             </button>
           </div>
