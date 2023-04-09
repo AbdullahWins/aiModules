@@ -26,7 +26,7 @@ module.exports = {
       bgColor: "#D5D1D1",
       bgTextareaColor: "#F3F9FF",
       btnDisabledTextColor: "#C0C0C0",
-      btnColor: "#5AB6FF",
+      btnColor: "#2F8AF4",
       btnColorDisabled: "#EBEBEB",
     },
     extend: {},
