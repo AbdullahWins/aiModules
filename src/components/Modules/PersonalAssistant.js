@@ -26,7 +26,7 @@ const PersonalAssistant = () => {
 
   return (
     <section>
-      <div className="w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto my-0">
+      <div className="w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto my-0 py-4">
         <section className="flex flex-col gap-4">
           <div className="flex flex-col gap-2 p-4 bg-whiteHigh shadow-lg shadow-blackLow rounded-xl">
             <h1 className="text-xl font-bold text-blackHigh pt-2">
