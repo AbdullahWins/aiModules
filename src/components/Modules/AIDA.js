@@ -56,6 +56,7 @@ const AIDA = () => {
                   <span>
                     <i className="fa-solid fa-spinner fa-spin-pulse"></i>
                   </span>
+                  &nbsp;&nbsp;
                   <span className="text-btnDisabledTextColor">
                     Generating...
                   </span>

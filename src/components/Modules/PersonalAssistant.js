@@ -56,6 +56,7 @@ const PersonalAssistant = () => {
                   <span>
                     <i className="fa-solid fa-spinner fa-spin-pulse"></i>
                   </span>
+                  &nbsp;&nbsp;
                   <span className="text-btnDisabledTextColor">
                     Generating...
                   </span>
@@ -80,7 +81,7 @@ const PersonalAssistant = () => {
               onClick={handleCopy}
             >
               <p className="flex items-center justify-center gap-1">
-              <i class="fa-regular fa-copy"></i>Copy
+                <i class="fa-regular fa-copy"></i>Copy
               </p>
             </button>
           </div>
