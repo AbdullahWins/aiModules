@@ -81,7 +81,7 @@ const ProblemAgitateSolution = () => {
               onClick={handleCopy}
             >
               <p className="flex items-center justify-center gap-1">
-                <i class="fa-regular fa-copy"></i>Copy
+                <i className="fa-regular fa-copy"></i>Copy
               </p>
             </button>
           </div>
