@@ -49,13 +49,6 @@
     "prompt": "Write unique value proposition (UAV) for:"
   },
   {
-    "moduleName": "Headline & Description",
-    "moduleDescription": "Create engaging headline & description",
-    "moduleRoute": "/headlines",
-    "img": "https://i.ibb.co/d0FnFdw/headline.png",
-    "prompt": "Write an engaging headline and SEO friendly description for:"
-  },
-  {
     "moduleName": "AIDA Framework",
     "moduleDescription": "The best AI powered AIDA Framework.",
     "moduleRoute": "/aida",
@@ -77,13 +70,6 @@
     "prompt": "I want you to act as an IT Expert. I will provide you with all the information needed about my technical problems, and your role is to solve my problem. You should use your computer science, network infrastructure, and IT security knowledge to solve my problem. Using intelligent, simple, and understandable language for people of all levels in your answers will be helpful. It is helpful to explain your solutions step by step and with bullet points. Try to avoid too many technical details, but use them when necessary. I want you to reply with the solution, not write any explanations. My first problem is:"
   },
   {
-    "moduleName": "Ai Lawyer",
-    "moduleDescription": "Your own AI powered lawyer at your service.",
-    "moduleRoute": "/lawyer",
-    "img": "https://i.ibb.co/pbSwjsm/lawyer.png",
-    "prompt": "Pretend to be a Lawyer, give suggestion about"
-  },
-  {
     "moduleName": "Career Counselor",
     "moduleDescription": "Your on-hand career counselor.",
     "moduleRoute": "/career",
@@ -91,40 +77,10 @@
     "prompt": "I want you to act as a career counselor. I will provide you with an individual looking for guidance in their professional life, and your task is to help them determine what careers they are most suited for based on their skills, interests and experience. You should also conduct research into the various options available, explain the job market trends in different industries and advice on which qualifications would be beneficial for pursuing particular fields. My first request is:"
   },
   {
-    "moduleName": "Ai Doctor",
-    "moduleDescription": "Consult medical issues with the Ai Doctor.",
-    "moduleRoute": "/doctor",
-    "img": "https://i.ibb.co/WGZWhY5/doctor.png",
-    "prompt": "I want you to act as a doctor and come up with creative treatments for illnesses or diseases. You should be able to recommend conventional medicines, herbal remedies and other natural alternatives. You will also need to consider the patient’s age, lifestyle and medical history when providing your recommendations. The first patient's request/concern is:"
-  },
-
-  {
     "moduleName": "Problem-Agitate-Solution",
     "moduleDescription": "Get quick but in-depth Problem-Agitate-Solutions.",
     "moduleRoute": "/pas",
     "img": "https://i.ibb.co/rfS73qB/pas.png",
     "prompt": "Write detailed Problem-Agitate-Solution about"
-  },
-
-  {
-    "moduleName": "Personal Chef",
-    "moduleDescription": "Make something new with AI chef.",
-    "moduleRoute": "/chef",
-    "img": "https://i.ibb.co/MDW0zh9/chef.png",
-    "prompt": "I require someone who can suggest delicious recipes that includes foods which are nutritionally beneficial but also easy & not time consuming enough therefore suitable for busy people like us among other factors such as cost effectiveness so overall dish ends up being healthy yet economical at same time! My first request is:"
-  },
-  {
-    "moduleName": "Dream Interpreter",
-    "moduleDescription": "Come find out what your dreams actually mean.",
-    "moduleRoute": "/dreamer",
-    "img": "https://i.ibb.co/tYztmht/dreamer.png",
-    "prompt": "I want you to act as a dream interpreter. I will give you descriptions of my dreams, and you will provide interpretations based on the symbols and themes present in the dream. Do not provide personal opinions or assumptions about the dreamer. Provide only factual interpretations based on the information given. My first dream is:"
-  },
-  {
-    "moduleName": "Personal Psychologist",
-    "moduleDescription": "Get some peace of mind here with the expert.",
-    "moduleRoute": "/psychologist",
-    "img": "https://i.ibb.co/X74xpnP/psychologist.png",
-    "prompt": "I want you to act a psychologist. i will provide you my thoughts. I want you to  give me scientific suggestions that will make me feel better. my first thought:"
   }
 ]
