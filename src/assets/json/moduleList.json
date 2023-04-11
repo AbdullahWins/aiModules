@@ -31,7 +31,7 @@
     "moduleName": "Job Description",
     "moduleDescription": "Generate job descriptions using AI assistant.",
     "moduleRoute": "/job",
-    "img": "./cover/job.png",
+    "img": "./cover/jobDescription.png",
     "prompt": "Write a detailed and standard Job description for:"
   },
   {
