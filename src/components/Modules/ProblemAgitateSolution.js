@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AiContext } from "../../contexts/AiContext";
 
-const ProductDescription = () => {
+const ProblemAgitateSolution = () => {
   const { output, processRequest, isLoading, setIsLoading } =
     useContext(AiContext);
   const [textCount, setTextCount] = useState(0);
@@ -9,7 +9,7 @@ const ProductDescription = () => {
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
     const prompt =
-      "Write a SEO friendly 900-1100 words product description for";
+      "You are a Problem Agitate Solution expert. provide me a detailed Problem Agitate Solution for:";
     setIsLoading(true);
     processRequest(prompt, input);
   };
@@ -30,7 +30,7 @@ const ProductDescription = () => {
         <section className="flex flex-col gap-4">
           <div className="flex flex-col gap-2 p-4 bg-whiteHigh shadow-sm shadow-blackLow rounded-xl">
             <h1 className="text-xl font-bold text-blackHigh pt-2">
-              Product Description
+              PAS Framework
             </h1>
             <textarea
               onChange={(e) => {
@@ -91,4 +91,4 @@ const ProductDescription = () => {
   );
 };
 
-export default ProductDescription;
+export default ProblemAgitateSolution;
