@@ -22,7 +22,7 @@
   },
   {
     "moduleName": "Blog Writting",
-    "moduleDescription": "Write SEO friendly blogs that people actually reads.",
+    "moduleDescription": "Write SEO friendly and engaging blogs.",
     "moduleRoute": "/blog",
     "img": "./cover/blog.png",
     "prompt": "Act as a copywritter, Write a SEO friendly 900-1100 words blog post about"
@@ -77,8 +77,8 @@
     "prompt": "I want you to act as a career counselor. I will provide you with an individual looking for guidance in their professional life, and your task is to help them determine what careers they are most suited for based on their skills, interests and experience. You should also conduct research into the various options available, explain the job market trends in different industries and advice on which qualifications would be beneficial for pursuing particular fields. My first request is:"
   },
   {
-    "moduleName": "Problem-Agitate-Solution",
-    "moduleDescription": "Get quick but in-depth Problem-Agitate-Solutions.",
+    "moduleName": "PAS Framework",
+    "moduleDescription": "Get quick but in-depth PAS.",
     "moduleRoute": "/pas",
     "img": "./cover/pas.png",
     "prompt": "Write detailed Problem-Agitate-Solution about"
