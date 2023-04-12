@@ -2,10 +2,11 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import TopNav from "../components/Shared/TopNav";
 import Footer from "../components/Shared/Footer";
+import "./Main.css";
 
 const Main = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center md:justify-between bg-whiteMid">
+    <section className="min-h-screen flex flex-col justify-center md:justify-between bg-whiteMid mainBackground">
       <TopNav></TopNav>
       <Outlet></Outlet>
       <Footer></Footer>

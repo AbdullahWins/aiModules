@@ -25,10 +25,10 @@ const PersonalAssistant = () => {
   };
 
   return (
-    <section className="max-w-6xl w-full mx-auto my-0 ">
+    <section className="max-w-6xl w-full mx-auto my-0 px-4">
       <div className="w-full py-4">
         <section className="flex flex-col gap-4">
-          <div className="flex flex-col gap-2 p-4 bg-whiteHigh shadow-lg shadow-blackLow rounded-xl">
+          <div className="flex flex-col gap-2 p-4 bg-whiteHigh shadow-sm shadow-blackLow rounded-xl">
             <h1 className="text-xl font-bold text-blackHigh pt-2">
               Personal Assistant
             </h1>
@@ -66,7 +66,7 @@ const PersonalAssistant = () => {
               )}
             </button>
           </div>
-          <div className="p-4 bg-whiteHigh shadow-lg shadow-blackLow rounded-xl">
+          <div className="p-4 bg-whiteHigh shadow-sm shadow-blackLow rounded-xl">
             <h1 className="text-xl font-bold text-blackHigh py-2">Result</h1>
             <textarea
               className={`p-2 w-full rounded-xl border-none focus:outline-none bg-bgTextareaColor`}

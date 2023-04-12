@@ -8,9 +8,15 @@ const TopNav = () => {
           <h2 className="text-3xl font-black text-blackHigh">ASSISTRO</h2>
         </div>
         <div className="flex gap-4 py-2">
-          <button className="">Home</button>
-          <button className="">About Myself</button>
-          <button className="">Contact us</button>
+          <button className="text-btnNavColor hover:text-btnHoverColor">
+            Home
+          </button>
+          <button className="text-btnNavColor hover:text-btnHoverColor">
+            About Myself
+          </button>
+          <button className="text-btnNavColor hover:text-btnHoverColor">
+            Contact us
+          </button>
         </div>
       </div>
     </section>

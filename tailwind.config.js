@@ -25,13 +25,16 @@ module.exports = {
       // mainColor: "#FF6000",
       bgColor: "#D5D1D1",
       bgTextareaColor: "#F3F9FF",
+      textHeaderColor: "#525252",
       btnDisabledTextColor: "#C0C0C0",
       btnColor: "#2F8AF4",
       btnColorDisabled: "#EBEBEB",
 
-      //btn gradient
+      //btn colors
       btnGradientStart: "#242526",
       btnGradientEnd: "#8A8A8A",
+      btnHoverColor: "#7C7C7C",
+      btnNavColor: "#242526",
     },
     extend: {},
   },

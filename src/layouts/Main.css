@@ -1,0 +1,15 @@
+.mainBackground {
+  position: relative;
+}
+
+.mainBackground::before {
+  content: "";
+  position: absolute;
+  width: 964px;
+  height: 964px;
+  left: 219px;
+  top: -790px;
+  background: #aed3ff;
+  opacity: 0.5;
+  filter: blur(200px);
+}
