@@ -2,7 +2,7 @@ import React from "react";
 
 const TopNav = () => {
   return (
-    <section className="max-w-6xl w-full mx-auto my-0">
+    <section className="max-w-6xl w-full mx-auto my-0 px-4">
       <div className="hidden md:flex md:items-center md:justify-between">
         <div>
           <h2>ASSISTRO</h2>
