@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AiContext } from "../contexts/AiContext";
 import moduleList from "../assets/json/moduleList.json";
 import Card from "../components/Shared/Card";
-import AdSense from "react-adsense";
+import AdBanner from "../components/Ads/AdBanner";
 
 const Home = () => {
   const { resetOutput } = useContext(AiContext);
@@ -15,7 +15,6 @@ const Home = () => {
           <p className="text-blackMid text-3xl font-bold">
             What are we gonna create today?
           </p>
-          <AdSense.Google client="ca-pub-3609561166483473" slot="6825128101" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-end w-full gap-4 p-4">
           {moduleList?.map((module, i) => {
@@ -24,6 +23,7 @@ const Home = () => {
             );
           })}
         </div>
+        <AdBanner></AdBanner>
       </section>
     </div>
   );
