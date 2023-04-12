@@ -13,32 +13,16 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-1">
             <Link to="https://www.facebook.com">
-              <img
-                className="h-8 w-8"
-                src="https://daisyui.com/tailwind-css-component-profile-1@94w.jpg"
-                alt=""
-              />
+              <i class="fa-brands fa-square-facebook text-2xl"></i>
             </Link>
             <Link to="https://www.twitter.com">
-              <img
-                className="h-8 w-8"
-                src="https://daisyui.com/tailwind-css-component-profile-1@94w.jpg"
-                alt=""
-              />
+              <i class="fa-brands fa-square-twitter text-2xl"></i>
             </Link>
             <Link to="https://www.linkedin.com">
-              <img
-                className="h-8 w-8"
-                src="https://daisyui.com/tailwind-css-component-profile-1@94w.jpg"
-                alt=""
-              />
+              <i class="fa-brands fa-linkedin text-2xl"></i>
             </Link>
             <Link to="https://www.whatsapp.com">
-              <img
-                className="h-8 w-8"
-                src="https://daisyui.com/tailwind-css-component-profile-1@94w.jpg"
-                alt=""
-              />
+              <i class="fa-brands fa-square-whatsapp text-2xl"></i>
             </Link>
           </div>
         </div>

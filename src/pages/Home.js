@@ -11,8 +11,8 @@ const Home = () => {
     <div className="flex items-center justify-center">
       <section className="flex flex-col items-center gap-4 max-w-6xl w-full">
         <div className="flex flex-col items-center justify-center backdrop-blur-sm">
-          <p className="text-blackHigh text-2xl">Hello, Sir!</p>
-          <p className="text-blackMid text-3xl font-bold">
+          <p className="text-blackHigh text-3xl">Hello, Sir!</p>
+          <p className="text-transparent bg-clip-text bg-gradient-to-r from-btnGradientStart to-btnGradientEnd text-5xl font-bold pb-2">
             What are we gonna create today?
           </p>
         </div>

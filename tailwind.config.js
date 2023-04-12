@@ -28,6 +28,10 @@ module.exports = {
       btnDisabledTextColor: "#C0C0C0",
       btnColor: "#2F8AF4",
       btnColorDisabled: "#EBEBEB",
+
+      //btn gradient
+      btnGradientStart: "#242526",
+      btnGradientEnd: "#8A8A8A",
     },
     extend: {},
   },
