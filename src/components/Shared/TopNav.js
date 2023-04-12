@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TopNav = () => {
   return (
@@ -8,15 +9,21 @@ const TopNav = () => {
           <h2 className="text-3xl font-black text-blackHigh">ASSISTRO</h2>
         </div>
         <div className="flex gap-4 py-2">
-          <button className="text-btnNavColor hover:text-btnHoverColor">
-            Home
-          </button>
-          <button className="text-btnNavColor hover:text-btnHoverColor">
-            About Myself
-          </button>
-          <button className="text-btnNavColor hover:text-btnHoverColor">
-            Contact us
-          </button>
+          <Link to="/">
+            <button className="text-btnNavColor hover:text-btnHoverColor">
+              Home
+            </button>
+          </Link>
+          <Link to="/about">
+            <button className="text-btnNavColor hover:text-btnHoverColor">
+              About Myself
+            </button>
+          </Link>
+          <Link to="/contact">
+            <button className="text-btnNavColor hover:text-btnHoverColor">
+              Contact us
+            </button>
+          </Link>
         </div>
       </div>
     </section>
