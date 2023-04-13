@@ -29,6 +29,8 @@ module.exports = {
       btnDisabledTextColor: "#C0C0C0",
       btnColor: "#2F8AF4",
       btnColorDisabled: "#EBEBEB",
+      titleColor: "#242526",
+      subTitleColor: "#808080",
 
       //btn colors
       btnGradientStart: "#242526",

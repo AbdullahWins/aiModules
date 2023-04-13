@@ -19,7 +19,7 @@ const TopNav = () => {
               About Myself
             </button>
           </Link>
-          <Link to="/contact">
+          <Link to="https://netrocreative.com/">
             <button className="text-btnNavColor hover:text-btnHoverColor">
               Contact us
             </button>

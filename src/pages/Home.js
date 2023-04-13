@@ -18,7 +18,7 @@ const Home = () => {
             What are we gonna create today?
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-end w-full gap-4 p-4 pb-8 md:pb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-end w-full gap-6 p-4 pb-8 md:pb-4">
           {moduleList?.map((module, i) => {
             return (
               <Card key={i} module={module} resetOutput={resetOutput}></Card>
