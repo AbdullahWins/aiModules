@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TopNav = () => {
   return (
-    <section className="max-w-6xl w-full mx-auto my-0 px-4">
+    <section className="max-w-6xl w-full mx-auto my-0 px-4 py-6">
       <div className="hidden md:flex md:items-center md:justify-between">
         <div>
           <h2 className="text-3xl font-black text-blackHigh">ASSISTRO</h2>
