@@ -25,7 +25,7 @@ const ITSupport = () => {
   };
 
   return (
-    <section className="max-w-6xl mx-auto my-0 w-full px-4">
+    <section className="max-w-6xl mx-auto my-0 w-full px-4 pb-16">
       <div className="w-full py-4">
         <section className="flex flex-col gap-4">
           <div className="flex flex-col gap-2 p-4 bg-whiteHigh shadow-sm shadow-blackLow rounded-xl">
