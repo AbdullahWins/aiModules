@@ -10,8 +10,8 @@ const About = () => {
             Myself
           </p>
         </div>
-        <div className="flex items-center justify-center gap-4 py-10 px-4">
-          <div className="bg-whiteHigh rounded-2xl p-6">
+        <div className="flex flex-col md:flex-row items-start justify-center gap-4 py-10 px-4">
+          <div className="bg-whiteHigh rounded-2xl p-6 min-h-80">
             <p className="text-2xl text-aboutHeaderColor">Who</p>
             <p className="text-transparent bg-clip-text bg-gradient-to-b from-aboutGradientStart to-aboutGradientEnd text-8xl font-bold">
               I'M
@@ -24,7 +24,7 @@ const About = () => {
               both personal and business use.
             </p>
           </div>
-          <div className="bg-whiteHigh rounded-2xl p-6">
+          <div className="bg-whiteHigh rounded-2xl p-6 min-h-80">
             <p className="text-2xl text-aboutHeaderColor">What</p>
             <p className="text-transparent bg-clip-text bg-gradient-to-b from-aboutGradientStart to-aboutGradientEnd text-8xl font-bold">
               I Do
