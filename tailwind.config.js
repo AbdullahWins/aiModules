@@ -35,6 +35,8 @@ module.exports = {
       btnGradientEnd: "#8A8A8A",
       btnHoverColor: "#7C7C7C",
       btnNavColor: "#242526",
+      cardGradientStart: "#6F7BF7",
+      cardGradientEnd: "#9BDCF8",
     },
     extend: {},
   },
