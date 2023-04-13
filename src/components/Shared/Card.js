@@ -11,12 +11,8 @@ const Card = ({ module }) => {
         onClick={resetOutput}
       >
         <section className="h-20 m-1">
-          <div className="flex items-center justify-between bg-whiteHigh border-2 rounded-lg border-whiteHigh shadow-md">
-            <img
-              className="h-20 p-2 bg-whiteHigh"
-              src={img}
-              alt={moduleName}
-            />
+          <div className="flex items-center justify-between bg-whiteHigh border-2 rounded-lg border-whiteHigh hover:border-cardGradientStart shadow-md">
+            <img className="h-20 p-2 bg-whiteHigh rounded-lg" src={img} alt={moduleName} />
             <div className="flex flex-col gap-1 w-60">
               <p className="text-blackHigh font-semibold text-md text-start pr-2">
                 {moduleName}
