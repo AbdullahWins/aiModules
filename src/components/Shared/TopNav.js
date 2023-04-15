@@ -20,7 +20,11 @@ const TopNav = () => {
               About Myself
             </button>
           </Link>
-          <Link to="https://netrocreative.com/">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            to="https://netrocreative.com/"
+          >
             <button className="text-btnNavColor hover:text-btnHoverColor">
               Our Website
             </button>

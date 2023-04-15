@@ -1,5 +1,6 @@
 {
   "name": "ai-ecommerce-assistant",
+  "homepage": "https://prochat.product8.net/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

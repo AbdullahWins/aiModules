@@ -48,7 +48,11 @@ module.exports = {
       aboutHeaderColor: "#A5A5A5",
       aboutDetailsColor: "#767676",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        mainBg: "url('/src/assets/bg/BG.svg')",
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {

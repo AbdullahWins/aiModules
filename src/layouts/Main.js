@@ -6,7 +6,9 @@ import "./Main.css";
 
 const Main = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-start md:justify-between bg-whiteMid customGradient">
+    <section
+      className={`min-h-screen flex flex-col justify-start md:justify-between bg-mainBg bg-no-repeat bg-top`}
+    >
       <TopNav></TopNav>
       <Outlet></Outlet>
       <Footer></Footer>
