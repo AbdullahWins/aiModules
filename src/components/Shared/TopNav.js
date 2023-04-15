@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo/logo.png";
 
 const TopNav = () => {
   return (
-    <section className="max-w-6xl w-full mx-auto my-0 px-4 py-6">
+    <section className="max-w-6xl w-full mx-auto my-0 px-4 py-9">
       <div className="hidden md:flex md:items-center md:justify-between">
         <div>
-          <h2 className="text-3xl font-black text-blackHigh">ASSISTRO</h2>
+          <img className="h-8" src={logo} alt="" />
         </div>
-        <div className="flex gap-4 py-2">
+        <div className="flex gap-8 py-2">
           <Link to="/">
             <button className="text-btnNavColor hover:text-btnHoverColor">
               Home
@@ -21,7 +22,7 @@ const TopNav = () => {
           </Link>
           <Link to="https://netrocreative.com/">
             <button className="text-btnNavColor hover:text-btnHoverColor">
-              Contact us
+              Our Website
             </button>
           </Link>
         </div>

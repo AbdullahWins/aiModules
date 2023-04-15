@@ -14,7 +14,7 @@ const Home = () => {
           <p className="text-textHeaderColor text-3xl text-center px-3">
             Hello, Sir!
           </p>
-          <p className="text-transparent bg-clip-text bg-gradient-to-r from-btnGradientStart to-btnGradientEnd text-5xl font-bold pb-2 px-3 text-center">
+          <p className="text-transparent bg-clip-text bg-gradient-to-r from-btnGradientStart to-btnGradientEnd text-5xl font-bold pb-4 px-3 text-center">
             What are we gonna create today?
           </p>
         </div>

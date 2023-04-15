@@ -11,18 +11,18 @@ const Footer = () => {
             Copyright © 2023 <span className="text-infoColor">Assistro</span> -
             All right are reserved
           </p>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-4">
             <Link to="https://web.facebook.com/netrocreative">
-              <i class="fa-brands fa-square-facebook text-3xl"></i>
+              <i class="fa-brands fa-facebook text-3xl"></i>
             </Link>
             <Link to="https://twitter.com/netrocreative">
-              <i class="fa-brands fa-square-twitter text-3xl"></i>
+              <i class="fa-brands fa-twitter text-3xl"></i>
             </Link>
             <Link to="https://www.linkedin.com/company/netrocreative/">
               <i class="fa-brands fa-linkedin text-3xl"></i>
             </Link>
             <Link to="https://www.whatsapp.com">
-              <i class="fa-brands fa-square-whatsapp text-3xl"></i>
+              <i class="fa-brands fa-whatsapp text-3xl"></i>
             </Link>
           </div>
         </div>
