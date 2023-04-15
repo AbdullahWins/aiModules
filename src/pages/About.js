@@ -17,7 +17,7 @@ const About = () => {
               I'M
             </p>
             <p className="text-base text-aboutDetailsColor pt-12">
-              Assistro, a Chat GPT API-powered AI chat app developed by Netro
+              ProChat, a Chat GPT API-powered AI chat app developed by Netro
               Creative, provides natural language conversations with a virtual
               assistant for task assistance and helpful information. Its
               advanced language processing capabilities make it convenient for
@@ -30,7 +30,7 @@ const About = () => {
               I Do
             </p>
             <p className="text-base text-aboutDetailsColor pt-12">
-              Netro Creative's Assistro is an AI chat app that uses Chat GPT
+              Netro Creative's ProChat is an AI chat app that uses Chat GPT
               API, helping users to accomplish their tasks and obtain helpful
               information via natural language conversations, thanks to its
               advanced language processing features. You're responsible for its

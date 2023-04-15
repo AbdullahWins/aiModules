@@ -8,7 +8,7 @@ const Footer = () => {
       <section className="hidden max-w-6xl w-full mx-auto my-0 md:block footer footer-center px-4 py-12 text-base-content">
         <div className="flex items-center justify-between">
           <p className="text-base">
-            Copyright © 2023 <span className="text-infoColor">Assistro</span> -
+            Copyright © 2023 <span className="text-infoColor">ProChat</span> -
             All right are reserved
           </p>
           <div className="flex items-center gap-4">
