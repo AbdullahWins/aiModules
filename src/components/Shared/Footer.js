@@ -21,7 +21,7 @@ const Footer = () => {
             <Link to="https://www.linkedin.com/company/netrocreative/">
               <i class="fa-brands fa-linkedin text-3xl"></i>
             </Link>
-            <Link to="https://www.whatsapp.com">
+            <Link to="https://wa.me/+8801724244796">
               <i class="fa-brands fa-whatsapp text-3xl"></i>
             </Link>
           </div>

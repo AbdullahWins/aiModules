@@ -13,7 +13,6 @@ import UniqueValue from "../components/Modules/UniqueValue";
 import CareerConsultant from "../components/Modules/CareerConsultant";
 import ProblemAgitateSolution from "../components/Modules/ProblemAgitateSolution";
 import AIDA from "../components/Modules/AIDA";
-import Contact from "../pages/Contact";
 import About from "../pages/About";
 
 export const routes = createBrowserRouter([
@@ -28,10 +27,6 @@ export const routes = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
-      },
-      {
-        path: "/contact",
-        element: <Contact></Contact>,
       },
       {
         path: "/blog",
