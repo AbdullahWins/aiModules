@@ -41,6 +41,7 @@ const SocialMediaAdvert = () => {
               id="input"
               cols="5"
               rows="5"
+              autoFocus
             ></textarea>
             {/* <p className="text-right">{textCount}/200</p> */}
             <button
