@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+/* Hide scrollbar for all elements on mobile */
+@media (max-width: 767px) {
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
