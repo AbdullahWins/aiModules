@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <hr className="opacity-5" />
+      {/* <hr className="opacity-5" /> */}
       <section className="hidden max-w-6xl w-full mx-auto my-0 md:block footer footer-center px-4 py-12 text-base-content">
         <div className="flex items-center justify-between">
           <p className="text-base">
