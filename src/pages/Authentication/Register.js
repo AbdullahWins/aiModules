@@ -13,15 +13,20 @@ const Register = () => {
     const form = event?.target;
     const email = form?.email?.value;
     const password = form?.password?.value;
+    const confirmPassword = form?.confirmPassword?.value;
 
-    createNewUserEmail(email, password)
-      .then((result) => {
-        form.reset();
-        navigate(from, { replace: true });
-      })
-      .catch((error) => {
-        console.log(error?.message);
-      });
+    if (password === confirmPassword) {
+      createNewUserEmail(email, password)
+        .then((result) => {
+          form.reset();
+          navigate(from, { replace: true });
+        })
+        .catch((error) => {
+          console.log(error?.message);
+        });
+    } else {
+      return;
+    }
   };
   return (
     <div className="flex flex-col items-center justify-center">
