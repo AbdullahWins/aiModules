@@ -29,6 +29,11 @@ const TopNav = () => {
               Our Website
             </button>
           </Link>
+          <Link to="/login">
+            <button className="rounded-full text-btnNavColor hover:text-btnHoverColor">
+              Login
+            </button>
+          </Link>
         </div>
       </div>
     </section>

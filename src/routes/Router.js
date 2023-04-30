@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layouts/Main";
+import AuthLayout from "../layouts/AuthLayout";
 import ITSupport from "../components/Modules/ITSupport";
 import BlogPost from "../components/Modules/BlogPost";
 import ColdEmail from "../components/Modules/ColdEmail";
@@ -17,11 +18,16 @@ import About from "../pages/About";
 import Login from "../pages/Authentication/Login";
 import Register from "../pages/Authentication/Register";
 import Subscription from "../pages/Subscription/Subscription";
+import PrivateRoute from "./PrivateRoute";
 
 export const routes = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: (
+      <PrivateRoute>
+        <Main></Main>
+      </PrivateRoute>
+    ),
     children: [
       {
         path: "/",
@@ -30,14 +36,6 @@ export const routes = createBrowserRouter([
       {
         path: "/home",
         element: <Home></Home>,
-      },
-      {
-        path: "/login",
-        element: <Login></Login>,
-      },
-      {
-        path: "/",
-        element: <Register></Register>,
       },
       {
         path: "/subscription",
@@ -94,6 +92,20 @@ export const routes = createBrowserRouter([
       {
         path: "/aida",
         element: <AIDA></AIDA>,
+      },
+    ],
+  },
+  {
+    path: "/",
+    element: <AuthLayout></AuthLayout>,
+    children: [
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
       },
     ],
   },
