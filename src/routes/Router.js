@@ -14,6 +14,9 @@ import CareerConsultant from "../components/Modules/CareerConsultant";
 import ProblemAgitateSolution from "../components/Modules/ProblemAgitateSolution";
 import AIDA from "../components/Modules/AIDA";
 import About from "../pages/About";
+import Login from "../pages/Authentication/Login";
+import Register from "../pages/Authentication/Register";
+import Subscription from "../pages/Subscription/Subscription";
 
 export const routes = createBrowserRouter([
   {
@@ -23,6 +26,22 @@ export const routes = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/home",
+        element: <Home></Home>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/",
+        element: <Register></Register>,
+      },
+      {
+        path: "/subscription",
+        element: <Subscription></Subscription>,
       },
       {
         path: "/about",

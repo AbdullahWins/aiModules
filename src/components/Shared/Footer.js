@@ -13,16 +13,16 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-4">
             <Link to="https://web.facebook.com/netrocreative">
-              <i class="fa-brands fa-facebook text-3xl"></i>
+              <i className="fa-brands fa-facebook text-3xl"></i>
             </Link>
             <Link to="https://twitter.com/netrocreative">
-              <i class="fa-brands fa-twitter text-3xl"></i>
+              <i className="fa-brands fa-twitter text-3xl"></i>
             </Link>
             <Link to="https://www.linkedin.com/company/netrocreative/">
-              <i class="fa-brands fa-linkedin text-3xl"></i>
+              <i className="fa-brands fa-linkedin text-3xl"></i>
             </Link>
             <Link to="https://wa.me/+8801724244796">
-              <i class="fa-brands fa-whatsapp text-3xl"></i>
+              <i className="fa-brands fa-whatsapp text-3xl"></i>
             </Link>
           </div>
         </div>
