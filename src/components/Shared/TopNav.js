@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
 
 const TopNav = () => {
+  const { user, logout } = useContext(AuthContext);
+
   return (
     <section className="max-w-6xl w-full mx-auto my-0 px-4 md:py-9">
       <div className="hidden md:flex md:items-center md:justify-between">
@@ -29,11 +33,21 @@ const TopNav = () => {
               Our Website
             </button>
           </Link>
-          <Link to="/login">
-            <button className="rounded-full text-btnNavColor hover:text-btnHoverColor">
-              Login
+          {user ? (
+            <button
+              onClick={() => {
+                logout();
+              }}
+            >
+              Logout
             </button>
-          </Link>
+          ) : (
+            <Link to="/login">
+              <button className="rounded-full text-btnNavColor hover:text-btnHoverColor">
+                Login
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </section>

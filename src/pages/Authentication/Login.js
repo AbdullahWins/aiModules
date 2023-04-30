@@ -30,7 +30,7 @@ const Login = () => {
       <h2 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-aboutGradientStart to-aboutGradientEnd font-bold pb-10">
         Login to continue
       </h2>
-      <div className="w-1/3 border-2 border-btnColor rounded-lg">
+      <div className="w-1/4 border-2 border-btnColor rounded-lg">
         <form className="px-10 py-12" onSubmit={handleLogin}>
           <input
             type="email"
@@ -42,9 +42,9 @@ const Login = () => {
             type="password"
             name="password"
             placeholder="Password"
-            className="input input-bordered w-full my-4 font-bold"
+            className="input input-bordered w-full mt-4 font-bold"
           />
-          <button className="btn w-full rounded-full bg-btnColor border-none">
+          <button className="btn w-full rounded-full mt-6 bg-btnColor border-none">
             Login
           </button>
         </form>
