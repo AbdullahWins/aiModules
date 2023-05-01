@@ -1,12 +1,26 @@
 import React, { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
   const { createNewUserEmail } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const from = location?.state?.from?.pathname || "/";
+
+  const notSamePasswordNotification = () =>
+    toast.error("Passwords are not same!", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
 
   const handleSignup = (event) => {
     event.preventDefault();
@@ -25,7 +39,7 @@ const Register = () => {
           console.log(error?.message);
         });
     } else {
-      return;
+      notSamePasswordNotification();
     }
   };
   return (
@@ -34,7 +48,7 @@ const Register = () => {
       <h2 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-aboutGradientStart to-aboutGradientEnd font-bold pb-10">
         Register to continue
       </h2>
-      <div className="w-1/4 border-2 border-btnColor rounded-lg">
+      <div className="w-1/4 border border-btnColor rounded-3xl">
         <form className="px-10 py-12" onSubmit={handleSignup}>
           <input
             type="email"
@@ -65,6 +79,18 @@ const Register = () => {
           <Link to="/login"> Login</Link>
         </span>
       </p>
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 };

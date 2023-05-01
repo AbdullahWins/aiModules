@@ -30,7 +30,7 @@ const Login = () => {
       <h2 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-aboutGradientStart to-aboutGradientEnd font-bold pb-10">
         Login to continue
       </h2>
-      <div className="w-1/4 border-2 border-btnColor rounded-lg">
+      <div className="w-1/4 border border-btnColor rounded-3xl">
         <form className="px-10 py-12" onSubmit={handleLogin}>
           <input
             type="email"
