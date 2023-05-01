@@ -10,8 +10,8 @@ const Register = () => {
   const navigate = useNavigate();
   const from = location?.state?.from?.pathname || "/";
 
-  const notSamePasswordNotification = () =>
-    toast.error("Passwords are not same!", {
+  const errorToast = (message) =>
+    toast.error(message, {
       position: "top-right",
       autoClose: 2000,
       hideProgressBar: false,
@@ -36,10 +36,10 @@ const Register = () => {
           navigate(from, { replace: true });
         })
         .catch((error) => {
-          console.log(error?.message);
+          errorToast(error?.message);
         });
     } else {
-      notSamePasswordNotification();
+      errorToast("Passwords didn't match!");
     }
   };
   return (

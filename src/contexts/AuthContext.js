@@ -15,6 +15,7 @@ const auth = getAuth(firebaseApp);
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [subscriptionStatus, setSubscriptionStatus] = useState(false);
   const [loading, setLoading] = useState(true);
 
   const updateUser = (profile) => {
@@ -53,7 +54,37 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
 
-  console.log(user);
+  useEffect(() => {
+    if (!user?.email) {
+      return;
+    }
+    const fetchSubscriptions = async () => {
+      try {
+        const response = await fetch(
+          `https://api.stripe.com/v1/customers?email=${user?.email}`,
+          {
+            headers: {
+              Authorization: `Bearer ${process.env.REACT_APP_stripeSecretKey}`,
+            },
+            method: "GET",
+          }
+        );
+
+        const data = await response.json();
+
+        if (data?.data?.length > 0) {
+          setSubscriptionStatus(true);
+        } else {
+          setSubscriptionStatus(false);
+        }
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+        setLoading(false);
+      }
+    };
+    fetchSubscriptions();
+  }, [user]);
 
   const authInfo = {
     user,
@@ -64,6 +95,7 @@ const AuthProvider = ({ children }) => {
     providerLogin,
     logout,
     loading,
+    subscriptionStatus,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

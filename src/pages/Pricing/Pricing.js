@@ -1,8 +1,33 @@
 import React from "react";
 import "react-toastify/dist/ReactToastify.css";
 import verifiedIcon from "../../assets/icon/verified.png";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
 
 const Pricing = () => {
+  const { user } = useContext(AuthContext);
+
+  const handleSubscribe = async (productId) => {
+    const stripe = window.Stripe(process.env.REACT_APP_stripePublicKey);
+    const { error } = await stripe.redirectToCheckout({
+      mode: "subscription",
+      lineItems: [{ price: productId, quantity: 1 }],
+      customerEmail: user?.email,
+      successUrl: process.env.REACT_APP_stripeSuccessUrl,
+      cancelUrl: process.env.REACT_APP_stripeSuccessUrl,
+    });
+
+    if (error) {
+      console.error(error);
+    }
+  };
+
+  //stripe checkout
+  const handleCheckout = (productId) => {
+    handleSubscribe(productId);
+    console.log(productId);
+  };
+
   return (
     <div className="flex flex-col items-center justify-center py-2 md:py-8">
       <div className="text-center">
@@ -52,7 +77,12 @@ const Pricing = () => {
             </div>
           </section>
           <div className="flex items-center justify-center">
-            <button className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none">
+            <button
+              onClick={() => {
+                handleCheckout(process.env.REACT_APP_stripeProductId1);
+              }}
+              className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none"
+            >
               Purchase
             </button>
           </div>
@@ -104,7 +134,12 @@ const Pricing = () => {
             </div>
           </section>
           <div className="flex items-end justify-center">
-            <button className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none">
+            <button
+              onClick={() => {
+                handleCheckout(process.env.REACT_APP_stripeProductId2);
+              }}
+              className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none"
+            >
               Purchase
             </button>
           </div>
@@ -149,7 +184,12 @@ const Pricing = () => {
             </div>
           </section>
           <div className="flex items-center justify-center">
-            <button className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none">
+            <button
+              onClick={() => {
+                handleCheckout(process.env.REACT_APP_stripeProductId3);
+              }}
+              className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none"
+            >
               Purchase
             </button>
           </div>
