@@ -79,7 +79,7 @@ const Pricing = () => {
           <div className="flex items-center justify-center">
             <button
               onClick={() => {
-                handleCheckout(process.env.REACT_APP_stripeProductId1);
+                handleCheckout(process.env.REACT_APP_stripeProductMonthly);
               }}
               className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none"
             >
@@ -95,9 +95,9 @@ const Pricing = () => {
             </span>
             <p className="text-3xl font-bold py-6">Gold</p>
             <p className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-cardGradientStart to-cardGradientEnd">
-              $250
+              $500
             </p>
-            <p className="text-base text-brownFadeColor">Monthly</p>
+            <p className="text-base text-brownFadeColor">Half Yearly</p>
           </section>
           <section className="p-6">
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
@@ -136,7 +136,7 @@ const Pricing = () => {
           <div className="flex items-end justify-center">
             <button
               onClick={() => {
-                handleCheckout(process.env.REACT_APP_stripeProductId2);
+                handleCheckout(process.env.REACT_APP_stripeProductHalfYearly);
               }}
               className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none"
             >
@@ -149,9 +149,9 @@ const Pricing = () => {
           <section className="text-center">
             <p className="text-3xl font-bold py-6">Platinum</p>
             <p className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-cardGradientStart to-cardGradientEnd">
-              $500
+              $1000
             </p>
-            <p className="text-base text-brownFadeColor">Monthly</p>
+            <p className="text-base text-brownFadeColor">Yearly</p>
           </section>
           <section className="p-6">
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
@@ -186,7 +186,7 @@ const Pricing = () => {
           <div className="flex items-center justify-center">
             <button
               onClick={() => {
-                handleCheckout(process.env.REACT_APP_stripeProductId3);
+                handleCheckout(process.env.REACT_APP_stripeProductYearly);
               }}
               className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none"
             >
