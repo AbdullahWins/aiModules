@@ -39,6 +39,8 @@ module.exports = {
       btnNavColor: "#242526",
       cardGradientStart: "#6F7BF7",
       cardGradientEnd: "#9BDCF8",
+      brownFadeColor: "#757575",
+      brownTextColor: "#818181",
 
       // about
       aboutTextStart: "#242526",

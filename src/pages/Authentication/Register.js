@@ -48,7 +48,7 @@ const Register = () => {
       <h2 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-aboutGradientStart to-aboutGradientEnd font-bold pb-10">
         Register to continue
       </h2>
-      <div className="w-1/4 border border-btnColor rounded-3xl">
+      <div className="w-3/4 md:w-2/4 lg:w-[476px] border border-btnColor rounded-3xl">
         <form className="px-10 py-12" onSubmit={handleSignup}>
           <input
             type="email"
@@ -69,7 +69,7 @@ const Register = () => {
             className="input input-bordered w-full font-bold"
           />
           <button className="btn w-full rounded-full mt-6 bg-btnColor border-none">
-            Login
+            Register
           </button>
         </form>
       </div>

@@ -19,6 +19,11 @@ const TopNav = () => {
               Home
             </button>
           </Link>
+          <Link to="/pricing">
+            <button className="text-btnNavColor hover:text-btnHoverColor">
+              Pricing
+            </button>
+          </Link>
           <Link to="/about">
             <button className="text-btnNavColor hover:text-btnHoverColor">
               About Myself

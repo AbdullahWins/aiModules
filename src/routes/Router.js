@@ -17,8 +17,8 @@ import AIDA from "../components/Modules/AIDA";
 import About from "../pages/About";
 import Login from "../pages/Authentication/Login";
 import Register from "../pages/Authentication/Register";
-import Subscription from "../pages/Subscription/Subscription";
 import PrivateRoute from "./PrivateRoute";
+import Pricing from "../pages/Pricing/Pricing";
 
 export const routes = createBrowserRouter([
   {
@@ -38,8 +38,8 @@ export const routes = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/subscription",
-        element: <Subscription></Subscription>,
+        path: "/pricing",
+        element: <Pricing></Pricing>,
       },
       {
         path: "/about",
