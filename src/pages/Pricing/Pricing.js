@@ -10,7 +10,7 @@ const Pricing = () => {
   document.title = `${process.env.REACT_APP_ApplicationName} | Pricing`;
 
   let navigate = useNavigate();
-  const { user, subscriptionStatus } = useContext(AuthContext);
+  const { user, subscriptionStatus, loading } = useContext(AuthContext);
 
   const handleSubscribe = async (productId) => {
     const stripe = window.Stripe(process.env.REACT_APP_stripePublicKey);
@@ -39,10 +39,21 @@ const Pricing = () => {
   return (
     <div className="flex flex-col items-center justify-center py-2 md:py-8">
       <div className="text-center">
-        <p className="text-3xl">Choose a plan</p>
-        <h2 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-aboutGradientStart to-aboutGradientEnd font-bold pb-10">
-          That Fits For You
-        </h2>
+        {subscriptionStatus ? (
+          <div>
+            <p className="text-3xl">Thank You</p>
+            <h2 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-aboutGradientStart to-aboutGradientEnd font-bold pb-10">
+              You Have An Active Subscription!
+            </h2>
+          </div>
+        ) : (
+          <div>
+            <p className="text-3xl">Choose a plan</p>
+            <h2 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-aboutGradientStart to-aboutGradientEnd font-bold pb-10">
+              That Fits For You
+            </h2>
+          </div>
+        )}
       </div>
       <section className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-6">
         {/* card 1 */}
@@ -86,11 +97,11 @@ const Pricing = () => {
           </section>
           <div className="flex items-center justify-center">
             <button
-              disabled={subscriptionStatus}
+              disabled={subscriptionStatus || loading}
               onClick={() => {
                 handleCheckout(process.env.REACT_APP_stripeProductMonthly);
               }}
-              className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none"
+              className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none normal-case"
             >
               Purchase
             </button>
@@ -144,11 +155,11 @@ const Pricing = () => {
           </section>
           <div className="flex items-end justify-center">
             <button
-              disabled={subscriptionStatus}
+              disabled={subscriptionStatus || loading}
               onClick={() => {
                 handleCheckout(process.env.REACT_APP_stripeProductHalfYearly);
               }}
-              className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none"
+              className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none normal-case"
             >
               Purchase
             </button>
@@ -195,11 +206,11 @@ const Pricing = () => {
           </section>
           <div className="flex items-center justify-center">
             <button
-              disabled={subscriptionStatus}
+              disabled={subscriptionStatus || loading}
               onClick={() => {
                 handleCheckout(process.env.REACT_APP_stripeProductYearly);
               }}
-              className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none"
+              className="btn rounded-full my-4 absolute bottom-0 bg-btnColor border-none normal-case"
             >
               Purchase
             </button>

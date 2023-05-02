@@ -8,7 +8,7 @@ const Register = () => {
   // changing the webpage title dynamically
   document.title = `${process.env.REACT_APP_ApplicationName} | Register`;
 
-  const { createNewUserEmail } = useContext(AuthContext);
+  const { createNewUserEmail, loading } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const from = location?.state?.from?.pathname || "/";
@@ -71,7 +71,10 @@ const Register = () => {
             placeholder="Confirm Password"
             className="input input-bordered w-full font-bold"
           />
-          <button className="btn w-full rounded-full mt-6 bg-btnColor border-none">
+          <button
+            disabled={loading}
+            className="btn w-full rounded-full mt-6 bg-btnColor border-none"
+          >
             Register
           </button>
         </form>
