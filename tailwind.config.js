@@ -29,6 +29,8 @@ module.exports = {
       btnDisabledTextColor: "#C0C0C0",
       btnColor: "#2F8AF4",
       btnColorDisabled: "#EBEBEB",
+      titleColor: "#242526",
+      subTitleColor: "#808080",
 
       //btn colors
       btnGradientStart: "#242526",
@@ -37,10 +39,24 @@ module.exports = {
       btnNavColor: "#242526",
       cardGradientStart: "#6F7BF7",
       cardGradientEnd: "#9BDCF8",
+      brownFadeColor: "#757575",
+      brownTextColor: "#818181",
+
+      // about
+      aboutTextStart: "#242526",
+      aboutTextEnd: "#8A8A8A",
+      aboutGradientStart: "#000000",
+      aboutGradientEnd: "#B6B6B6",
+      aboutHeaderColor: "#A5A5A5",
+      aboutDetailsColor: "#767676",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        mainBg: "url('/src/assets/bg/BG.svg')",
+      },
+    },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwind-scrollbar-hide")],
   daisyui: {
     themes: false,
   },

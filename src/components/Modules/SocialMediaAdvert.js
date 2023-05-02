@@ -1,10 +1,15 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AiContext } from "../../contexts/AiContext";
 
 const SocialMediaAdvert = () => {
   const { output, processRequest, isLoading, setIsLoading } =
     useContext(AiContext);
   const [textCount, setTextCount] = useState(0);
+  
+  //scroll on top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleClick = () => {
     const input = document.getElementById("input")?.value;
@@ -24,7 +29,7 @@ const SocialMediaAdvert = () => {
   };
 
   return (
-    <section className="max-w-6xl mx-auto my-0 w-full px-4">
+    <section className="max-w-6xl mx-auto my-0 w-full px-4 pb-24 md:pb-4">
       <div className="w-full py-4">
         <section className="flex flex-col gap-4">
           <div className="flex flex-col gap-2 p-4 bg-whiteHigh shadow-sm shadow-blackLow rounded-xl">

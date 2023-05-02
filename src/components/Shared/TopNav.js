@@ -1,17 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo/logo.png";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
 
 const TopNav = () => {
+  const { user, logout } = useContext(AuthContext);
+
   return (
-    <section className="max-w-6xl w-full mx-auto my-0 px-4">
+    <section className="max-w-6xl w-full mx-auto my-0 px-4 md:py-9">
       <div className="hidden md:flex md:items-center md:justify-between">
         <div>
-          <h2 className="text-3xl font-black text-blackHigh">ASSISTRO</h2>
+          <img className="h-8" src={logo} alt="" />
         </div>
-        <div className="flex gap-4 py-2">
+        <div className="flex gap-8 py-2">
           <Link to="/">
             <button className="text-btnNavColor hover:text-btnHoverColor">
               Home
+            </button>
+          </Link>
+          <Link to="/pricing">
+            <button className="text-btnNavColor hover:text-btnHoverColor">
+              Pricing
             </button>
           </Link>
           <Link to="/about">
@@ -19,11 +29,30 @@ const TopNav = () => {
               About Myself
             </button>
           </Link>
-          <Link to="/contact">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            to="https://netrocreative.com/"
+          >
             <button className="text-btnNavColor hover:text-btnHoverColor">
-              Contact us
+              Our Website
             </button>
           </Link>
+          {user ? (
+            <button
+              onClick={() => {
+                logout();
+              }}
+            >
+              Logout
+            </button>
+          ) : (
+            <Link to="/login">
+              <button className="rounded-full text-btnNavColor hover:text-btnHoverColor">
+                Login
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </section>
