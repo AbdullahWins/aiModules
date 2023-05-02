@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
-import { useState } from "react";
 
 const TopNav = () => {
   const { user, logout } = useContext(AuthContext);
-  const [activePage, setActivePage] = useState(document.title);
+  const [activePage, setActivePage] = useState(null);
+
+  useEffect(() => {
+    setActivePage(document.title);
+  }, []);
 
   console.log(activePage);
 
