@@ -23,11 +23,8 @@ import Pricing from "../pages/Pricing/Pricing";
 export const routes = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <PrivateRoute>
-        <Main></Main>
-      </PrivateRoute>
-    ),
+    element: <Main></Main>,
+
     children: [
       {
         path: "/",
@@ -45,6 +42,24 @@ export const routes = createBrowserRouter([
         path: "/about",
         element: <About></About>,
       },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+    ],
+  },
+  {
+    path: "/",
+    element: (
+      <PrivateRoute>
+        <AuthLayout></AuthLayout>
+      </PrivateRoute>
+    ),
+    children: [
       {
         path: "/blog",
         element: <BlogPost></BlogPost>,
@@ -92,20 +107,6 @@ export const routes = createBrowserRouter([
       {
         path: "/aida",
         element: <AIDA></AIDA>,
-      },
-    ],
-  },
-  {
-    path: "/",
-    element: <AuthLayout></AuthLayout>,
-    children: [
-      {
-        path: "/login",
-        element: <Login></Login>,
-      },
-      {
-        path: "/register",
-        element: <Register></Register>,
       },
     ],
   },

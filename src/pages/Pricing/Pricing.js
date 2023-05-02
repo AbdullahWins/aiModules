@@ -3,9 +3,11 @@ import "react-toastify/dist/ReactToastify.css";
 import verifiedIcon from "../../assets/icon/verified.png";
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
-  const { user } = useContext(AuthContext);
+  let navigate = useNavigate();
+  const { user, subscriptionStatus } = useContext(AuthContext);
 
   const handleSubscribe = async (productId) => {
     const stripe = window.Stripe(process.env.REACT_APP_stripePublicKey);
@@ -16,7 +18,6 @@ const Pricing = () => {
       successUrl: process.env.REACT_APP_stripeSuccessUrl,
       cancelUrl: process.env.REACT_APP_stripeSuccessUrl,
     });
-
     if (error) {
       console.error(error);
     }
@@ -24,7 +25,11 @@ const Pricing = () => {
 
   //stripe checkout
   const handleCheckout = (productId) => {
-    handleSubscribe(productId);
+    if (user) {
+      handleSubscribe(productId);
+    } else {
+      navigate("/login");
+    }
     console.log(productId);
   };
 
@@ -78,6 +83,7 @@ const Pricing = () => {
           </section>
           <div className="flex items-center justify-center">
             <button
+              disabled={subscriptionStatus}
               onClick={() => {
                 handleCheckout(process.env.REACT_APP_stripeProductMonthly);
               }}
@@ -135,6 +141,7 @@ const Pricing = () => {
           </section>
           <div className="flex items-end justify-center">
             <button
+              disabled={subscriptionStatus}
               onClick={() => {
                 handleCheckout(process.env.REACT_APP_stripeProductHalfYearly);
               }}
@@ -185,6 +192,7 @@ const Pricing = () => {
           </section>
           <div className="flex items-center justify-center">
             <button
+              disabled={subscriptionStatus}
               onClick={() => {
                 handleCheckout(process.env.REACT_APP_stripeProductYearly);
               }}

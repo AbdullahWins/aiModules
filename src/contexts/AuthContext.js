@@ -71,6 +71,7 @@ const AuthProvider = ({ children }) => {
         );
 
         const data = await response.json();
+        console.log(data);
 
         if (data?.data?.length > 0) {
           setSubscriptionStatus(true);
