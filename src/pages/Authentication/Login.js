@@ -8,7 +8,7 @@ const Login = () => {
   // changing the webpage title dynamically
   document.title = `${process.env.REACT_APP_ApplicationName} | Login`;
 
-  const { loginUserEmail } = useContext(AuthContext);
+  const { loginUserEmail, loading } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const from = location?.state?.from?.pathname || "/";
@@ -68,7 +68,10 @@ const Login = () => {
             />
             <span>Remember me</span>
           </div>
-          <button className="btn w-full rounded-full mt-6 bg-btnColor border-none">
+          <button
+            disabled={loading}
+            className="btn w-full rounded-full mt-6 bg-btnColor border-none"
+          >
             Login
           </button>
         </form>
