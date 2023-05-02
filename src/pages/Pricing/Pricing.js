@@ -68,31 +68,31 @@ const Pricing = () => {
           <section className="p-6">
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>One month unlimited use</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Most advanced blog creator</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Custom AI assistant</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>24/7 support</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Monthly subscription</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Access to all the modules</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Auto renewal</span>
             </div>
           </section>
           <div className="flex items-center justify-center">
