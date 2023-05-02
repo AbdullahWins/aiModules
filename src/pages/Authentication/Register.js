@@ -5,6 +5,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
+  // changing the webpage title dynamically
+  document.title = `${process.env.REACT_APP_ApplicationName} | Register`;
+
   const { createNewUserEmail } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();

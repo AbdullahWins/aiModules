@@ -5,6 +5,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
+  // changing the webpage title dynamically
+  document.title = `${process.env.REACT_APP_ApplicationName} | Login`;
+
   const { loginUserEmail } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();

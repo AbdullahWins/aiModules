@@ -5,6 +5,9 @@ import Card from "../components/Shared/Card";
 import AdBanner from "../components/Ads/AdBanner";
 
 const Home = () => {
+  // changing the webpage title dynamically
+  document.title = `${process.env.REACT_APP_ApplicationName} | Home`;
+
   const { resetOutput } = useContext(AiContext);
 
   return (

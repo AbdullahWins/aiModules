@@ -6,6 +6,9 @@ import { AuthContext } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
+  // changing the webpage title dynamically
+  document.title = `${process.env.REACT_APP_ApplicationName} | Pricing`;
+
   let navigate = useNavigate();
   const { user, subscriptionStatus } = useContext(AuthContext);
 

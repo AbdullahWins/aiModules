@@ -1,6 +1,9 @@
 import React from "react";
 
 const About = () => {
+  // changing the webpage title dynamically
+  document.title = `${process.env.REACT_APP_ApplicationName} | About`;
+
   return (
     <section className="flex items-center justify-center">
       <div className="max-w-6xl">
@@ -30,8 +33,8 @@ const About = () => {
               I Do
             </p>
             <p className="text-base text-aboutDetailsColor pt-12">
-              Netro Creative's ProChat is an AI chat app that uses Chat GPT
-              API, helping users to accomplish their tasks and obtain helpful
+              Netro Creative's ProChat is an AI chat app that uses Chat GPT API,
+              helping users to accomplish their tasks and obtain helpful
               information via natural language conversations, thanks to its
               advanced language processing features. You're responsible for its
               development, deployment, and maintenance.
