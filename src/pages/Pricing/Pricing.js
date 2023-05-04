@@ -42,7 +42,7 @@ const Pricing = () => {
         {subscriptionStatus ? (
           <div>
             <p className="text-3xl">Thank You</p>
-            <h2 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-aboutGradientStart to-aboutGradientEnd font-bold pb-10">
+            <h2 className="text-lg md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-aboutGradientStart to-aboutGradientEnd font-bold pb-10">
               You Have An Active Subscription!
             </h2>
           </div>
@@ -122,35 +122,35 @@ const Pricing = () => {
           <section className="p-6">
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Six months unlimited use</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>10% Discount</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Most advanced blog creator</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Custom AI assistant</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>24/7 support</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Half yearly subscription</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Access to all the modules</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Auto renewal</span>
             </div>
           </section>
           <div className="flex items-end justify-center">
@@ -177,31 +177,31 @@ const Pricing = () => {
           <section className="p-6">
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>One year unlimited use</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>20% Discount</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Most advanced blog creator</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Custom AI assistant</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>24/7 support</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Access to all the modules</span>
             </div>
             <div className="flex items-center justify-start gap-3 py-1 text-brownTextColor">
               <img className="h-5 w-5" src={verifiedIcon} alt="" />
-              <span>1 Credit per year</span>
+              <span>Auto renewal</span>
             </div>
           </section>
           <div className="flex items-center justify-center">
