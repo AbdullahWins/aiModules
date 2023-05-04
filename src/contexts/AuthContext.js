@@ -15,7 +15,7 @@ const auth = getAuth(firebaseApp);
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [subscriptionStatus, setSubscriptionStatus] = useState(false);
+  const [subscriptionStatus, setSubscriptionStatus] = useState(true);
   const [loading, setLoading] = useState(true);
 
   const updateUser = (profile) => {
@@ -59,6 +59,7 @@ const AuthProvider = ({ children }) => {
       return;
     }
     const fetchSubscriptions = async () => {
+      setLoading(true);
       try {
         const response = await fetch(
           `https://api.stripe.com/v1/customers?email=${user?.email}`,
@@ -69,22 +70,18 @@ const AuthProvider = ({ children }) => {
             method: "GET",
           }
         );
-
         const data = await response.json();
-        console.log(data);
-
         if (data?.data?.length > 0) {
           setSubscriptionStatus(true);
         } else {
           setSubscriptionStatus(false);
         }
-        setLoading(false);
       } catch (error) {
         console.error(error);
-        setLoading(false);
       }
     };
     fetchSubscriptions();
+    setLoading(false);
   }, [user]);
 
   const authInfo = {
