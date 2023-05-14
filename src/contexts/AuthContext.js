@@ -15,7 +15,7 @@ const auth = getAuth(firebaseApp);
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [subscriptionStatus, setSubscriptionStatus] = useState(true);
+  const [subscriptionStatus, setSubscriptionStatus] = useState(false);
   const [loading, setLoading] = useState(true);
 
   const updateUser = (profile) => {
